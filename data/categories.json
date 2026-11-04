@@ -1,0 +1,74 @@
+[
+  {
+    "id": 7,
+    "slug": "guias",
+    "name": "Guías de Compra y Comparativas",
+    "parent": "",
+    "description": "Comparativas técnicas, análisis de cobertura y guías de compra para elegir el mejor repetidor WiFi de doble banda, largo alcance, WiFi 6 o sistema Mesh según tu hogar u oficina.",
+    "count": 498
+  },
+  {
+    "id": 11,
+    "slug": "seguridad",
+    "name": "Seguridad y Red Doméstica",
+    "parent": "",
+    "description": "Manuales paso a paso de seguridad en redes inalámbricas: cómo proteger tu repetidor WiFi contra intrusos, configurar cifrado WPA3/WPA2, filtrado MAC, IP estática y control de acceso.",
+    "count": 91
+  },
+  {
+    "id": 9,
+    "slug": "problemas-y-soluciones",
+    "name": "Problemas y Soluciones Técnicas",
+    "parent": "",
+    "description": "Diagnóstico y solución definitiva a los fallos más frecuentes en repetidores WiFi: conectado pero sin acceso a internet, desconexiones constantes, caída de velocidad, fallos de WPS y luces de error.",
+    "count": 76
+  },
+  {
+    "id": 10,
+    "slug": "configuracion",
+    "name": "Compatibilidad y Configuración",
+    "parent": "",
+    "description": "Guías prácticas paso a paso para configurar cualquier repetidor WiFi desde el navegador o por botón WPS, vincular con banda de 5 GHz, modo Punto de Acceso (AP) y compatibilidad entre marcas.",
+    "count": 59
+  },
+  {
+    "id": 3,
+    "slug": "curiosidades",
+    "name": "Conceptos y Optimización WiFi",
+    "parent": "",
+    "description": "Conceptos fundamentales sobre redes inalámbricas: cómo orientar las antenas de un repetidor WiFi, diferencias entre bandas de 2.4 GHz y 5 GHz, tipos de extensores y optimización de señal.",
+    "count": 30
+  },
+  {
+    "id": 4,
+    "slug": "usos",
+    "name": "Usos y Aplicaciones por Espacio",
+    "parent": "",
+    "description": "Aplicaciones prácticas de los repetidores WiFi en casas de varios pisos, apartamentos, oficinas, gaming de baja latencia, streaming 4K, jardines exteriores, negocios y zonas rurales.",
+    "count": 30
+  },
+  {
+    "id": 5,
+    "slug": "historia",
+    "name": "Historia de Internet y Redes",
+    "parent": "",
+    "description": "La evolución de las telecomunicaciones, la creación de Internet, el desarrollo de las redes inalámbricas WiFi y el impacto del Internet de las Cosas (IoT) en la conectividad moderna.",
+    "count": 14
+  },
+  {
+    "id": 2,
+    "slug": "resenas",
+    "name": "Reseñas de Repetidores WiFi",
+    "parent": "",
+    "description": "Análisis técnicos a fondo de los modelos más destacados de repetidores y extensores de rango WiFi: pruebas de cobertura real, velocidad en Mbps, puertos Ethernet y facilidad de instalación.",
+    "count": 6
+  },
+  {
+    "id": 8,
+    "slug": "trucos",
+    "name": "Trucos y Consejos de Instalación",
+    "parent": "",
+    "description": "Consejos de expertos y trucos de ubicación estratégica para multiplicar el alcance de tu repetidor WiFi, eliminar zonas muertas y evitar interferencias electromagnéticas en casa.",
+    "count": 5
+  }
+]
