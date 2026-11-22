@@ -5,6 +5,8 @@ import Header from "@/components/Header";
 import Footer from "@/components/Footer";
 import Breadcrumbs from "@/components/Breadcrumbs";
 import AdBanner from "@/components/AdBanner";
+import AmazonAffiliateBox from "@/components/AmazonAffiliateBox";
+import { getContextualAmazonProducts } from "@/lib/amazon";
 import {
   getAllPosts,
   getPostBySlug,
@@ -182,6 +184,11 @@ export default async function ArticlePage({ params }: { params: Params }) {
   const [firstHalfContent, secondHalfContent] =
     splitContentAtThirdH2(enhancedHtml);
   const faqPairs = extractFaqPairs(post.content);
+  const amazonContext = getContextualAmazonProducts(
+    post.slug,
+    post.category,
+    post.title
+  );
 
   const breadcrumbItems = [
     { label: "Inicio", href: "/" },
@@ -351,6 +358,14 @@ export default async function ArticlePage({ params }: { params: Params }) {
                 dangerouslySetInnerHTML={{ __html: firstHalfContent }}
               />
 
+              {/* Mid-Article Contextual Amazon Affiliate Product Card */}
+              <AmazonAffiliateBox
+                variant="inline"
+                sectionTitle={amazonContext.sectionTitle}
+                sectionSubtitle={amazonContext.sectionSubtitle}
+                products={amazonContext.products}
+              />
+
               {/* Contextual Internal Links Box + In-Article AdSense */}
               {secondHalfContent && (
                 <>
@@ -432,6 +447,14 @@ export default async function ArticlePage({ params }: { params: Params }) {
                   </div>
                 </section>
               )}
+
+              {/* End-of-Article 3-Product Amazon Showcase */}
+              <AmazonAffiliateBox
+                variant="showcase"
+                sectionTitle={amazonContext.sectionTitle}
+                sectionSubtitle={amazonContext.sectionSubtitle}
+                products={amazonContext.products}
+              />
 
               {/* End-of-Article AdSense Banner */}
               <AdBanner className="my-10" />
@@ -540,6 +563,14 @@ export default async function ArticlePage({ params }: { params: Params }) {
             {/* Sticky Sidebar — Dinamica.pe style */}
             <aside className="mt-12 lg:mt-0 lg:w-80 lg:flex-shrink-0">
               <div className="sticky top-24 space-y-8">
+                {/* Sticky Amazon Affiliate Box in Sidebar */}
+                <AmazonAffiliateBox
+                  variant="sidebar"
+                  sectionTitle={amazonContext.sectionTitle}
+                  sectionSubtitle={amazonContext.sectionSubtitle}
+                  products={amazonContext.products}
+                />
+
                 {/* Related Articles Box */}
                 {relatedPosts.length > 0 && (
                   <div className="rounded-2xl border border-slate-200 bg-slate-50/70 p-6">

@@ -152,19 +152,24 @@ export default function Footer() {
           </div>
         </div>
 
-        <div className="mt-12 border-t border-slate-800/80 pt-8 flex flex-col sm:flex-row items-center justify-between gap-4 text-xs text-slate-500">
-          <p>
-            © {SITE_NAME}. Todos los derechos reservados. Guías técnicas de
-            conectividad y comparativas verificadas.
+        <div className="mt-12 border-t border-slate-800/80 pt-8 space-y-3 text-xs text-slate-500">
+          <p className="text-[11px] text-slate-400/90 leading-relaxed">
+            <strong>Aviso de Afiliación Amazon:</strong> En calidad de Afiliado de Amazon (<code>repetidores-21</code> en Amazon.es y <code>repetidores-20</code> en Amazon.com), {SITE_NAME} obtiene ingresos por las compras adscritas que cumplen los requisitos aplicables, sin costo adicional para el lector.
           </p>
-          <div className="flex items-center gap-4">
-            <Link href="/sitemap.xml" className="hover:text-slate-300">
-              Mapa del Sitio (XML)
-            </Link>
-            <span>·</span>
-            <Link href="/hola-hablamos/" className="hover:text-slate-300">
-              Charlie Lingán
-            </Link>
+          <div className="flex flex-col sm:flex-row items-center justify-between gap-4">
+            <p>
+              © {SITE_NAME}. Todos los derechos reservados. Guías técnicas de
+              conectividad y comparativas verificadas.
+            </p>
+            <div className="flex items-center gap-4">
+              <Link href="/sitemap.xml" className="hover:text-slate-300">
+                Mapa del Sitio (XML)
+              </Link>
+              <span>·</span>
+              <Link href="/hola-hablamos/" className="hover:text-slate-300">
+                Charlie Lingán
+              </Link>
+            </div>
           </div>
         </div>
       </div>

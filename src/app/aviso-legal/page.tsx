@@ -33,6 +33,15 @@ export default function AvisoLegalPage() {
               dangerouslySetInnerHTML={{ __html: page.content }}
             />
           )}
+
+          <div className="mt-10 rounded-2xl border border-slate-200 bg-slate-50 p-6 text-sm text-slate-700 leading-relaxed">
+            <h2 className="text-lg font-extrabold text-slate-900 mb-2">
+              Participación en el Programa de Afiliados de Amazon
+            </h2>
+            <p>
+              <strong>{SITE_NAME}</strong> (<code>repetidores.org</code>) participa en el Programa de Afiliados de Amazon EU (ID de seguimiento oficial: <code>repetidores-21</code>) y en el Programa de Afiliados de Amazon.com Services LLC (ID de seguimiento oficial: <code>repetidores-20</code>), programas de publicidad para afiliados diseñados para ofrecer a sitios web un modo de obtener comisiones por publicidad, publicitando e incluyendo enlaces a <code>Amazon.es</code> y <code>Amazon.com</code>. En calidad de Afiliado de Amazon, obtenemos ingresos por las compras adscritas que cumplen los requisitos aplicables, sin que ello suponga ningún sobrecoste para el usuario.
+            </p>
+          </div>
         </div>
       </main>
       <Footer />

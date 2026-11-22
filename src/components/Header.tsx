@@ -2,6 +2,7 @@
 
 import { useState } from "react";
 import Link from "next/link";
+import { openChat } from "@/lib/chat-constants";
 
 const MAIN_NAV = [
   { label: "Guías de Compra", href: "/guias/" },
@@ -115,13 +116,20 @@ export default function Header() {
         </nav>
 
         {/* Desktop CTA */}
-        <div className="hidden sm:flex items-center gap-3">
+        <div className="hidden sm:flex items-center gap-2.5">
           <Link
-            href="/#asesor-wifi"
-            className="rounded-xl bg-slate-900 px-4 py-2 text-xs font-extrabold text-white shadow-xs transition hover:bg-primary"
+            href="/#planificador"
+            className="rounded-xl border border-slate-200 bg-slate-50 px-3.5 py-2 text-xs font-extrabold text-slate-800 transition hover:border-primary hover:text-primary"
           >
-            📡 Diagnóstico y Selector WiFi
+            📐 Simulador m²
           </Link>
+          <button
+            type="button"
+            onClick={() => openChat()}
+            className="rounded-xl bg-slate-900 px-4 py-2 text-xs font-extrabold text-white shadow-xs transition hover:bg-primary cursor-pointer"
+          >
+            📡 Asesor IA WiFi
+          </button>
         </div>
 
         {/* Mobile Menu Button */}
@@ -179,13 +187,16 @@ export default function Header() {
             >
               👤 Sobre Charlie Lingán / Contacto
             </Link>
-            <Link
-              href="/#asesor-wifi"
-              onClick={() => setMobileOpen(false)}
-              className="block rounded-xl bg-slate-900 px-4 py-2.5 text-center text-xs font-extrabold text-white"
+            <button
+              type="button"
+              onClick={() => {
+                setMobileOpen(false);
+                openChat();
+              }}
+              className="block w-full rounded-xl bg-slate-900 px-4 py-2.5 text-center text-xs font-extrabold text-white cursor-pointer"
             >
-              📡 Ir al Diagnóstico y Selector WiFi
-            </Link>
+              📡 Abrir Asesor Técnico IA WiFi
+            </button>
           </div>
         </div>
       )}
