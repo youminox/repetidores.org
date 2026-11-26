@@ -60,8 +60,6 @@ const AMAZON_PRODUCTS: Record<string, AmazonProductCard> = {
     title: "TP-Link RE505X / RE700X — Repetidor WiFi 6 AX1500/AX3000 Doble Banda + Gigabit",
     subtitle:
       "Doble banda 2.4 y 5 GHz, puerto Ethernet Gigabit, Modo Punto de Acceso (AP) y configuración en 2 min con App Tether.",
-    rating: "4.6",
-    reviewsCount: "+28.400",
     urlES: `https://www.amazon.es/s?k=${encodeURIComponent("TP-Link RE505X RE700X repetidor WiFi 6 amplificador senal Gigabit")}&tag=${AMAZON_TAG_ES}`,
     urlUS: `https://www.amazon.com/s?k=${encodeURIComponent("TP-Link AX1500 AX3000 WiFi 6 Range Extender RE505X Gigabit Ethernet")}&tag=${AMAZON_TAG_US}`,
   },
@@ -71,8 +69,6 @@ const AMAZON_PRODUCTS: Record<string, AmazonProductCard> = {
     title: "TP-Link Deco X50 / Deco M4 (Pack 2 o 3 Nodos) — Sistema WiFi Mesh Todo el Hogar",
     subtitle:
       "Crea una sola red WiFi en viviendas de 150 a 550 m² y varias plantas con roaming inteligente sin cortes.",
-    rating: "4.7",
-    reviewsCount: "+41.500",
     urlES: `https://www.amazon.es/s?k=${encodeURIComponent("TP-Link Deco X50 Deco M4 sistema WiFi Mesh casa completa pack")}&tag=${AMAZON_TAG_ES}`,
     urlUS: `https://www.amazon.com/s?k=${encodeURIComponent("TP-Link Deco AX3000 X50 M4 Whole Home Mesh WiFi System")}&tag=${AMAZON_TAG_US}`,
   },
@@ -82,19 +78,15 @@ const AMAZON_PRODUCTS: Record<string, AmazonProductCard> = {
     title: "Kit PLC Powerline WiFi TP-Link TL-WPA7617 AV1000 Gigabit con Enchufe Integrado",
     subtitle:
       "Transmite internet por los cables eléctricos de tu casa ignorando muros de hormigón, forjados y sótanos.",
-    rating: "4.5",
-    reviewsCount: "+33.900",
     urlES: `https://www.amazon.es/s?k=${encodeURIComponent("TP-Link TL-WPA7617 Kit PLC Powerline WiFi AV1000 Gigabit enchufe")}&tag=${AMAZON_TAG_ES}`,
     urlUS: `https://www.amazon.com/s?k=${encodeURIComponent("TP-Link AV1000 Powerline WiFi Extender Starter Kit Gigabit")}&tag=${AMAZON_TAG_US}`,
   },
   "tplink-re330-ac1200": {
     id: "tplink-re330-ac1200",
-    badge: "⭐ Mejor Calidad/Precio Doble Banda",
+    badge: " Mejor Calidad/Precio Doble Banda",
     title: "TP-Link RE330 / RE305 AC1200 — Extensor WiFi Doble Banda Compacto",
     subtitle:
       "El superventas económico para pisos y apartamentos: extiende 2.4 y 5 GHz con puerto Ethernet e indicador de señal.",
-    rating: "4.5",
-    reviewsCount: "+64.200",
     urlES: `https://www.amazon.es/s?k=${encodeURIComponent("TP-Link RE330 RE305 AC1200 repetidor WiFi doble banda amplificador")}&tag=${AMAZON_TAG_ES}`,
     urlUS: `https://www.amazon.com/s?k=${encodeURIComponent("TP-Link AC1200 WiFi Extender RE315 RE305 Dual Band Ethernet")}&tag=${AMAZON_TAG_US}`,
   },
@@ -104,8 +96,6 @@ const AMAZON_PRODUCTS: Record<string, AmazonProductCard> = {
     title: "TP-Link RE650 / RE550 AC2600 — Repetidor de Largo Alcance 4 Antenas + Gigabit",
     subtitle:
       "4 antenas externas de alta ganancia con Beamforming y MU-MIMO 4x4 para hogares con muchos dispositivos y 4K.",
-    rating: "4.6",
-    reviewsCount: "+19.800",
     urlES: `https://www.amazon.es/s?k=${encodeURIComponent("TP-Link RE650 RE550 AC2600 repetidor WiFi largo alcance 4 antenas")}&tag=${AMAZON_TAG_ES}`,
     urlUS: `https://www.amazon.com/s?k=${encodeURIComponent("TP-Link AC2600 RE650 AC1900 RE550 WiFi Extender 4 Antennas")}&tag=${AMAZON_TAG_US}`,
   },
@@ -115,8 +105,6 @@ const AMAZON_PRODUCTS: Record<string, AmazonProductCard> = {
     title: "WAVLINK AC1200 / TP-Link EAP225-Outdoor — Repetidor y Punto de Acceso Exterior IP65",
     subtitle:
       "Resistente a lluvia y sol con antenas de 7 dBi y alimentación PoE para jardines, terrazas, piscinas y zonas rurales.",
-    rating: "4.4",
-    reviewsCount: "+12.700",
     urlES: `https://www.amazon.es/s?k=${encodeURIComponent("repetidor punto de acceso WiFi exterior impermeable IP65 largo alcance jardin")}&tag=${AMAZON_TAG_ES}`,
     urlUS: `https://www.amazon.com/s?k=${encodeURIComponent("WAVLINK AC1200 TP-Link EAP225 Outdoor Weatherproof WiFi Extender PoE")}&tag=${AMAZON_TAG_US}`,
   },
@@ -126,8 +114,6 @@ const AMAZON_PRODUCTS: Record<string, AmazonProductCard> = {
     title: "Xiaomi Mi WiFi Range Extender AC1200 — Repetidor Doble Banda con Puerto Ethernet",
     subtitle:
       "Compacto, económico y con banda de 5 GHz, modo Punto de Acceso y función SmartLink desde la App Mi Home.",
-    rating: "4.4",
-    reviewsCount: "+29.500",
     urlES: `https://www.amazon.es/s?k=${encodeURIComponent("Xiaomi Mi WiFi Range Extender AC1200 repetidor amplificador doble banda")}&tag=${AMAZON_TAG_ES}`,
     urlUS: `https://www.amazon.com/s?k=${encodeURIComponent("Xiaomi Mi WiFi Range Extender AC1200 Dual Band Ethernet")}&tag=${AMAZON_TAG_US}`,
   },
@@ -137,8 +123,6 @@ const AMAZON_PRODUCTS: Record<string, AmazonProductCard> = {
     title: "NETGEAR EX6120 / Nighthawk WiFi 6 — Repetidor Doble Banda con FastLane",
     subtitle:
       "Antenas externas orientables y tecnología FastLane que dedica una banda al router y otra a tus equipos sin perder velocidad.",
-    rating: "4.4",
-    reviewsCount: "+51.000",
     urlES: `https://www.amazon.es/s?k=${encodeURIComponent("NETGEAR EX6120 Nighthawk repetidor extensor rango WiFi doble banda")}&tag=${AMAZON_TAG_ES}`,
     urlUS: `https://www.amazon.com/s?k=${encodeURIComponent("NETGEAR WiFi Range Extender EX6120 AC1200 Nighthawk")}&tag=${AMAZON_TAG_US}`,
   },
@@ -148,8 +132,6 @@ const AMAZON_PRODUCTS: Record<string, AmazonProductCard> = {
     title: "Cable Ethernet Cat 8 Blindado S/FTP (40 Gbps) + Switch Gigabit TP-Link 5 Puertos",
     subtitle:
       "Para conectar tu repetidor por cable al router (Modo AP con 0% pérdida de velocidad) o conectar Smart TV, PC y consolas.",
-    rating: "4.8",
-    reviewsCount: "+47.100",
     urlES: `https://www.amazon.es/s?k=${encodeURIComponent("cable Ethernet Cat 8 blindado alta velocidad RJ45 red fibra")}&tag=${AMAZON_TAG_ES}`,
     urlUS: `https://www.amazon.com/s?k=${encodeURIComponent("Cat 8 Ethernet Cable High Speed Braided RJ45 LAN Network")}&tag=${AMAZON_TAG_US}`,
   },
@@ -159,8 +141,6 @@ const AMAZON_PRODUCTS: Record<string, AmazonProductCard> = {
     title: "TP-Link Archer AX55 / AX53 — Router WiFi 6 Gigabit AX3000 con Seguridad HomeShield WPA3",
     subtitle:
       "4 antenas de alta ganancia, cifrado WPA3 contra intrusos, filtrado MAC, VPN y compatibilidad nativa OneMesh.",
-    rating: "4.7",
-    reviewsCount: "+26.800",
     urlES: `https://www.amazon.es/s?k=${encodeURIComponent("TP-Link Archer AX55 AX53 Router WiFi 6 AX3000 Gigabit WPA3")}&tag=${AMAZON_TAG_ES}`,
     urlUS: `https://www.amazon.com/s?k=${encodeURIComponent("TP-Link Archer AX55 AX3000 WiFi 6 Router Gigabit WPA3")}&tag=${AMAZON_TAG_US}`,
   },

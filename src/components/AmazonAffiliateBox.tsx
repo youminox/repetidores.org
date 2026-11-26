@@ -143,27 +143,6 @@ export default function AmazonAffiliateBox({
           </div>
         </div>
 
-        <div className="flex flex-col sm:flex-row sm:items-center justify-between gap-5">
-          <div className="flex items-start gap-4">
-            <CategoryIcon type={primaryProduct.categoryType} />
-            <div>
-              <h3 className="text-base sm:text-lg font-extrabold text-slate-900 leading-snug">
-                {primaryProduct.title}
-              </h3>
-              <p className="mt-1 text-xs sm:text-sm text-slate-700 leading-relaxed">
-                {primaryProduct.subtitle}
-              </p>
-              <div className="mt-2 flex flex-wrap items-center gap-3 text-xs">
-                <span className="font-bold text-amber-600">
-                  ★★★★★ {primaryProduct.rating}/5
-                </span>
-                <span className="text-slate-500 font-medium">
-                  ({primaryProduct.reviewsCount} valoraciones)
-                </span>
-                <span className="inline-flex items-center gap-1 font-bold text-emerald-700">
-                  ✓ Envío Prime en {storeName}
-                </span>
-              </div>
             </div>
           </div>
 
@@ -212,24 +191,6 @@ export default function AmazonAffiliateBox({
           </div>
         </div>
 
-        <div className="space-y-3.5">
-          {products.slice(0, 2).map((prod) => {
-            const url = buildAmazonUrl(prod, region);
-            return (
-              <div
-                key={prod.id}
-                className="rounded-xl border border-blue-200/80 bg-white p-3.5 shadow-2xs"
-              >
-                <span className="inline-block rounded-md bg-blue-100 px-2 py-0.5 text-[10px] font-extrabold text-blue-900">
-                  {prod.badge}
-                </span>
-                <h4 className="mt-1.5 text-xs font-extrabold text-slate-900 leading-snug">
-                  {prod.title}
-                </h4>
-                <div className="mt-1 flex items-center gap-2 text-[11px]">
-                  <span className="font-bold text-amber-600">★★★★★ {prod.rating}</span>
-                  <span className="text-slate-400">({prod.reviewsCount})</span>
-                </div>
                 <a
                   href={url}
                   target="_blank"
@@ -346,15 +307,6 @@ export default function AmazonAffiliateBox({
                 </ul>
               </div>
 
-              <div className="mt-5 pt-3 border-t border-slate-200/80">
-                <div className="mb-3 flex items-center justify-between text-xs">
-                  <span className="font-extrabold text-amber-600">
-                    ★★★★★ {product.rating}/5
-                  </span>
-                  <span className="text-slate-500 font-medium">
-                    {product.reviewsCount} opiniones
-                  </span>
-                </div>
 
                 <a
                   href={url}

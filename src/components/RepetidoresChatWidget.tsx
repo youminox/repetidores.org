@@ -33,8 +33,6 @@ export interface ChatAmazonProductCard {
   badge: string;
   title: string;
   subtitle: string;
-  rating: string;
-  reviewsCount: string;
   urlES: string;
   urlUS: string;
 }
@@ -521,23 +519,6 @@ export default function RepetidoresChatWidget() {
                       {/* Recommended Amazon Affiliate Product Cards */}
                       {msg.recommendedProducts &&
                         msg.recommendedProducts.length > 0 && (
-                          <div className="space-y-2">
-                            {msg.recommendedProducts.map((prod) => {
-                              const amzUrl =
-                                region === "ES" ? prod.urlES : prod.urlUS;
-                              return (
-                                <div
-                                  key={prod.id}
-                                  className="rounded-2xl bg-gradient-to-br from-[#fffdf7] to-[#fef7e6] border-2 border-amber-400/80 p-3 shadow-sm"
-                                >
-                                  <div className="flex items-center justify-between gap-2">
-                                    <span className="inline-block rounded-full bg-amber-400/25 px-2.5 py-0.5 text-[10px] font-extrabold text-amber-950 border border-amber-400/50">
-                                      {prod.badge}
-                                    </span>
-                                    <span className="text-[11px] font-bold text-amber-600">
-                                      ★★★★★ {prod.rating} ({prod.reviewsCount})
-                                    </span>
-                                  </div>
                                   <h4 className="mt-1.5 font-extrabold text-xs sm:text-[13px] text-slate-900 leading-snug">
                                     {prod.title}
                                   </h4>
